@@ -82,7 +82,7 @@ int main()
 			SetConsoleTitleA(title.c_str());
 			title = _title;
 
-			if(kbhit() == 27) break;
+			if(kbhit() == 27) {getch(); break;}
 
 			timer -= clock()-t;
 		}
@@ -123,7 +123,7 @@ void cls()
 	{
 		for (size_t j = 0; j < 10; j++)
 		{
-			cout<<"ssssssssss";
+			cout<<"          ";
 		}
 		cout<<"\n";
 	}

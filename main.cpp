@@ -35,21 +35,15 @@ int main()
 
 	_timer = timer; //temp
 	//reset
-	while(true)
-	{
+	while(true){
 		//counting
-		while (timer>0)
-		{
+		while (timer>0){
 			t = clock();
 			c.X = 0; c.Y = 0; SetConsoleCursorPosition(hOut, c);
 
-			Sleep(111);
-			if(timer/60000<10)
-				cout<<"0";
-			cout<<timer/60000<<":";
-			if(timer/1000%60<10)
-				cout<<"0";
-			cout<<timer/1000%60<<":";
+			Sleep(444);
+			if(timer/60000<10) cout<<"0"; cout<<timer/60000<<":";
+			if(timer/1000%60<10) cout<<"0"; cout<<timer/1000%60<<":";
 			cout<<timer%1000<<"    "<<endl;	
 
 			_title = title; //temp

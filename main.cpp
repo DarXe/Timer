@@ -10,6 +10,10 @@ void cls();
 HANDLE hOut(GetStdHandle(STD_OUTPUT_HANDLE));
 COORD c;
 
+class timer{
+	int time = 0;
+}timer;
+
 int main()
 {
 	SetConsoleTitleA("Timer");

@@ -13,7 +13,7 @@ COORD c;
 class timer{
 	int time = 0;
 }timer;
-
+//
 int main()
 {
 	SetConsoleTitleA("Timer");

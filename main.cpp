@@ -12,6 +12,9 @@ COORD c;
 
 class timer{
 	int time = 0;
+	void setTimer(int time){
+		this->time = time;
+	}
 }timer;
 //
 int main()

@@ -11,9 +11,15 @@ HANDLE hOut(GetStdHandle(STD_OUTPUT_HANDLE));
 COORD c;
 
 class timer{
+private:
 	int time = 0;
+public:
 	void setTimer(int time){
 		this->time = time;
+	}
+	void startTimer()
+	{
+		
 	}
 }timer;
 //

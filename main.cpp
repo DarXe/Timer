@@ -14,12 +14,25 @@ class timer{
 private:
 	int time = 0;
 public:
-	void setTimer(int time){
+	void setTimer(short h, short m, short s){
+
 		this->time = time;
 	}
-	void startTimer()
+	void start()
 	{
 		
+	}
+	void pause()
+	{
+		
+	}
+	void stop()
+	{
+
+	}
+	void clock()
+	{
+
 	}
 }timer;
 //

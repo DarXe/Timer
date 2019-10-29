@@ -18,26 +18,21 @@ public:
 
 		this->time = time;
 	}
-	void start()
-	{
+	void start(){
 		
 	}
-	void pause()
-	{
+	void pause(){
 		
 	}
-	void stop()
-	{
+	void stop(){
 
 	}
-	void clock()
-	{
+	void clock(){
 
 	}
 }timer;
-//
-int main()
-{
+
+int main(){
 	SetConsoleTitleA("Timer");
 	clock_t t(clock());
 	unsigned short temp(0); //temp to set

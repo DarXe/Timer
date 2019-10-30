@@ -13,6 +13,7 @@ COORD c;
 class timer{
 private:
 	int time = 0;
+	bool isTimer = false;
 public:
 	void setTimer(short h, short m, short s){
 

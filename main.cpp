@@ -15,25 +15,41 @@ private:
 	int time = 0;
 	bool isTimer = false;
 public:
-	void setTimer(short h, short m, short s){
-
-		this->time = time;
+	void setTime(short h, short m, short s){
+		int temp = m;
+		m = h * 60 + temp;
+		temp = s;
+		s = m * 60 + temp;
+		time = s * 1000; //ms
 	}
 	void start(){
-		
+		isTimer = true;
 	}
 	void pause(){
-		
+		isTimer = false;
 	}
 	void stop(){
-
+		time = 0;
 	}
-	void clock(){
-
+	void clock(short delay){
+		if (isTimer){
+			if (time > 0){
+				;
+			}
+			else{
+				isTimer = false;
+			}
+		}
+	}
+	int getTime(){
+		return time;
 	}
 }timer;
 
 int main(){
+	timer.setTime(1, 27, 50);
+	cout<<timer.getTime();
+	getch();
 	SetConsoleTitleA("Timer");
 	clock_t t(clock());
 	unsigned short temp(0); //temp to set

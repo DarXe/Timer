@@ -15,7 +15,13 @@ private:
 	int time = 0;
 	bool isTimer = false;
 public:
-	void setTime(short h, short m, short s){
+	void setTime(short h = 0, short m = 0, short s = 0){
+		if(!h){
+			cout<<"Hours: "; cin>>h;
+			cout<<"Minutes: "; cin>>m;
+			cout<<"Seconds: "; cin>>s;
+		}
+		
 		int temp = m;
 		m = h * 60 + temp;
 		temp = s;
@@ -48,6 +54,7 @@ public:
 
 int main(){
 	timer.setTime(1, 27, 50);
+
 	cout<<timer.getTime();
 	getch();
 	SetConsoleTitleA("Timer");

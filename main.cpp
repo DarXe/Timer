@@ -15,7 +15,7 @@ private:
 	int time = 0;
 	bool isTimer = false;
 public:
-	void setTime(short h = 0, short m = 0, short s = 0){
+	void setTime(short s = 0, short m = 0, short h = 0){
 		if(!h){
 			cout<<"Hours: "; cin>>h;
 			cout<<"Minutes: "; cin>>m;

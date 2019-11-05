@@ -16,7 +16,7 @@ private:
 	bool isTimer = false;
 public:
 	void setTime(short s = 0, short m = 0, short h = 0){
-		if(!h){
+		if(!s){
 			cout<<"Hours: "; cin>>h;
 			cout<<"Minutes: "; cin>>m;
 			cout<<"Seconds: "; cin>>s;
@@ -53,7 +53,7 @@ public:
 }timer;
 
 int main(){
-	timer.setTime(1, 27, 50);
+	timer.setTime(1,1);
 
 	cout<<timer.getTime();
 	getch();

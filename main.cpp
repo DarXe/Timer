@@ -53,10 +53,10 @@ public:
 }timer;
 
 int main(){
-	timer.setTime(1,1);
+	//timer.setTime(1,1);
 
-	cout<<timer.getTime();
-	getch();
+	//cout<<timer.getTime();
+	//getch();
 	SetConsoleTitleA("Timer");
 	clock_t t(clock());
 	unsigned short temp(0); //temp to set
@@ -131,6 +131,7 @@ int main(){
 		{
 			if(kbhit() == 27) break;
 			Beep(1500, 500);
+			Beep(0, 1000);
 			cout<<"Press any key to stop . . . "<<endl;
 			if(kbhit()) {getch(); break;}
 		}
